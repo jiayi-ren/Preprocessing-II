@@ -190,6 +190,9 @@ img {
   margin: auto;
   color: #212529;
 }
+.nav-bar nav a:hover {
+  color: #17A2B8;
+}
 @media (max-width: 500px) {
   .nav-bar {
     justify-content: center;
@@ -279,7 +282,7 @@ img {
 @media (max-width: 850px) {
   .home .content-section .text-content {
     width: 40%;
-    margin: auto 5%;
+    margin: auto 1% auto 5%;
   }
 }
 @media (max-width: 500px) {
@@ -297,14 +300,17 @@ img {
 }
 @media (max-width: 850px) {
   .home .content-section .img-content {
-    width: 40%;
-    margin: auto 5%;
+    width: 45%;
+    margin: auto 5% auto 1%;
   }
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 .home .inverse-content {
@@ -315,9 +321,36 @@ img {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 850px) {
+  .home .inverse-content .text-content {
+    width: 42%;
+    margin: auto 5% auto 1%;
+  }
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+    margin: 5% 0;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 850px) {
+  .home .inverse-content .img-content {
+    width: 42%;
+    margin: auto 1% auto 5%;
+  }
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 500px) {
   .home .inverse-content {
@@ -362,6 +395,10 @@ img {
   padding: 4%;
   color: white;
   font-size: 1.6rem;
+}
+.home .content-pick .btn:hover {
+  background-color: white;
+  color: #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {

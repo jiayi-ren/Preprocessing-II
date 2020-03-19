@@ -37,7 +37,7 @@
 
       @media @tablet{
         width: 40%;
-        margin: auto 5%;
+        margin: auto 1% auto 5%;
       }
       @media @mobile{
         width: 100%;
@@ -54,12 +54,15 @@
         border-radius: 10px;
       }
       @media @tablet{
-        width: 40%;
-        margin: auto 5%;
+        width: 45%;
+        margin: auto 5% auto 1%;
       }
       @media @mobile{
         width: 100%;
         margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
     }
 
@@ -72,11 +75,33 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @tablet{
+        width: 42%;
+        margin: auto 5% auto 1%;
+      }
+
+      @media @mobile{
+        width: 100%;
+        margin: 5% 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @tablet{
+        width: 42%;
+        margin: auto 1% auto 5%;
+      }
+      @media @mobile{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
     }
 
     @media @mobile{
