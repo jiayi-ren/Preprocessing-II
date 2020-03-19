@@ -11,9 +11,11 @@
 
     @media @mobile{
       margin: auto 5%;
+      transition: ease all 3s;
     }
     @media @tablet{
       margin: auto 5%;
+      transition: ease all 3s;
     }
   }
 
@@ -23,18 +25,25 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      margin: auto 5%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
 
-      @media @mobile{
-        width: 100%;
-        margin: 5% 0;
-      }
       @media @tablet{
         width: 40%;
         margin: auto 5%;
       }
+      @media @mobile{
+        width: 100%;
+        margin: 5% 0;
+      }
+      
     }
 
     .img-content {
@@ -44,19 +53,16 @@
       img {
         border-radius: 10px;
       }
-      @media @mobile{
-        width: 100%;
-      }
       @media @tablet{
         width: 40%;
         margin: auto 5%;
       }
+      @media @mobile{
+        width: 100%;
+        margin: auto;
+      }
     }
 
-    @media @mobile{
-      margin: auto 5%;
-      justify-content: center;
-    }
   }
 
   .inverse-content {
@@ -114,15 +120,17 @@
         font-size: 1.8rem;
       }
     }
+
+    @media @tablet{
+      margin: auto 5%;
+    }
+
     @media @mobile{
       margin: auto 5%;
       flex-wrap: wrap;
       justify-content: center;
     }
     
-    @media @tablet{
-      margin: auto 5%;
-    }
   }
   
   // Animation
