@@ -1,6 +1,7 @@
 // Navigation Styles here
 .nav-bar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 2px dashed @navigation-border;
     padding: 2% 0;
@@ -13,6 +14,18 @@
             font-size: 1.6rem;
             margin: auto;
             color: @font-color;
+        }
+    }
+
+    @media @mobile {
+        justify-content: center;
+        div{
+            text-align: center;
+            width: 100%;
+            margin: 1%;
+        }
+        nav{
+            width: 80%;
         }
     }
 }
