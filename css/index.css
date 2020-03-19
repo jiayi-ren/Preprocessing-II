@@ -175,6 +175,10 @@ img {
   border-bottom: 2px dashed #C0C0C0;
   padding: 2% 0;
 }
+.nav-bar h1 {
+  position: relative;
+  animation: anime 2s;
+}
 .nav-bar nav {
   display: flex;
   justify-content: space-around;
@@ -204,6 +208,17 @@ img {
     margin: auto 5%;
   }
 }
+@keyframes anime {
+  0% {
+    transform: rotateZ(0deg);
+    left: 250px;
+    color: white;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    left: 0;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -214,6 +229,9 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  animation: appear 3s;
 }
 .home .main-header {
   border-bottom: 2px dashed #C0C0C0;
@@ -352,5 +370,13 @@ img {
 @media (max-width: 800px) {
   .home .content-pick {
     margin: auto 5%;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

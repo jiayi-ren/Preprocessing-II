@@ -5,6 +5,12 @@
     justify-content: space-between;
     border-bottom: 2px dashed @navigation-border;
     padding: 2% 0;
+
+    h1{
+        position: relative;
+        animation: anime 2s;
+    }
+
     nav{
         display: flex;
         justify-content: space-around;
@@ -34,6 +40,12 @@
             margin: auto 5%;
         }
         
-      }
+    }
 
+    // Animation Defination
+    @keyframes anime {
+        0%  {.animation(0deg, 250px); color: white;}
+        100%{.animation(0deg, 0);}
+    }
+      
 }
