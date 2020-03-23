@@ -1,1 +1,57 @@
 // Navigation Styles here
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px dashed @navigation-border;
+    padding: 2% 0;
+
+    h1{
+        position: relative;
+        animation: anime 2s;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        a{
+            text-decoration: none;
+            font-size: 1.6rem;
+            margin: auto;
+            color: @font-color;
+            &:hover{
+                color: @button-bg;
+            }
+        }
+    }
+
+
+
+    @media @mobile {
+        justify-content: center;
+        div{
+            text-align: center;
+            width: 100%;
+            margin: 1%;
+        }
+        nav{
+            width: 80%;
+        }
+        transition: ease all 3s;
+    }
+
+    @media @tablet{
+        div{
+            margin: auto 5%;
+        }
+        transition: ease all 3s;
+    }
+
+    // Animation Defination
+    @keyframes anime {
+        0%  {.animation(0deg, 250px); color: white;}
+        100%{.animation(0deg, 0);}
+    }
+      
+}

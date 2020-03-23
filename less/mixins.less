@@ -1,1 +1,19 @@
 // Mixins in here
+.btn-styles(@border-radius,@background-color, @padding, @color, @font-size){
+    text-align: center;
+    width: 80%;
+    border-radius: @border-radius;
+    background-color: @background-color;
+    padding: @padding;
+    color: @color;
+    font-size: @font-size;
+    &:hover{
+        background-color: @color;
+        color: @background-color;
+    }
+}
+
+.animation(@angle, @position) {
+    transform: rotateZ(@angle);
+    left: @position;
+}
